@@ -71,9 +71,9 @@ html {
     color: white;
 }
 
- #part3 i:hover {
+#part3 i:hover {
     color: #D5F803;
- }
+}
 
 .nav-comp button {
     background: #000;
@@ -98,7 +98,7 @@ html {
     font-size: 80px;
 }
 
-#hero-sec img {
+#hero-sec>h1>img {
     height: 50px;
 }
 
@@ -109,16 +109,29 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #right-part {
-    width: 15%;
-    padding: 10px;
+    width: 12%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 
 #right-part img {
-   
+    width: 15vh;
+    border-radius: 50%;
+    padding: 8px;
+    border: 15px solid #1f1f1f;
+    box-shadow: -1px -1px 0 #d5f803;
+}
 
+#arrow img {
+     height: 25%;
+    position: absolute;
+top: 2%;
+    left: 27%;
 }
 
 #mid-part {
@@ -131,5 +144,36 @@ html {
 }
 
 #left-part {
-    width: 15%;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    text-align: center;
+}
+
+#left-part div {
+    padding: 20px 10px;
+}
+
+#left-part h3 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#left-part p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#left-part i,
+#left-part p {
+    font-weight: 100;
+    color: #D5F803;
+}
+
+#left-part>div>i {
+    font-size: 100px;
+}
+
+#left-part>hr {
+    border: 1px solid #D5F803;
 }
