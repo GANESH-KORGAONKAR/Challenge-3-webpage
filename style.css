@@ -128,9 +128,9 @@ html {
 }
 
 #arrow img {
-     height: 25%;
+    height: 25%;
     position: absolute;
-top: 2%;
+    top: 2%;
     left: 27%;
 }
 
@@ -176,4 +176,119 @@ top: 2%;
 
 #left-part>hr {
     border: 1px solid #D5F803;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#page2-head {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+#page2-part1 h2 {
+    font-weight: 100;
+    color: #D5F803;
+}
+
+#page2-part1 h1 {
+    font-size: 45px;
+    font-weight: 100;
+}
+
+#right,
+#left {
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+    font-size: 40px;
+    background: #000;
+    color: white;
+}
+
+#right:hover {
+    background: white;
+    color: #000;
+}
+
+#left {
+    background: white;
+    color: #000;
+}
+
+#left:hover {
+    background: #000;
+    color: white;
+}
+
+#page2-arrow img {
+    height: 15%;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+}
+
+#cards {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    height: 50%;
+    background: ghostwhite;
+    margin: 5%;
+    padding: 1%;
+    background-color: #1B1C20;
+    position: relative;
+    border-radius: 10px;
+}
+
+.card>img {
+    height: 100%;
+    padding: 5%;
+    background: #7D00F2;
+    border-radius: 10px;
+    object-fit: contain;
+    clip-path: polygon(50% 0, 0 0, 0 86%, 35% 86%, 35% 96%, 100% 96%, 100% 85%, 100% 13%, 65% 13%);
+}
+
+.card #img2 {
+background: #D5F803;
+}
+
+.card #img3 {
+background: #FF5C1F;
+}
+
+.offer {
+    position: absolute;
+    font-size: 13px;
+    align-items: center;
+    top: 4%;
+    right: 3%;
+    background-color: #333333;
+    padding: 0 10px;
+}
+
+.indiv {
+    display: flex;
+    position: absolute;
+    font-size: 13px;
+    align-items: center;
+    bottom: 6%;
+    background-color: #333333;
+    padding: 0 10px;
+}
+
+.indiv>img {
+    width: 20px;
+    margin: 10px;
 }
