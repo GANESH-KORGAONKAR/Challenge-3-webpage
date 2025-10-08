@@ -95,7 +95,7 @@ html {
 }
 
 #hero-sec {
-    height: 100vh;
+    height: 90vh;
     background: #111111;
 }
 
@@ -145,7 +145,7 @@ html {
 }
 
 #mid-part img {
-    height: 70vh;
+    height: 64vh;
     padding: 0 20%;
 }
 
@@ -196,7 +196,7 @@ html {
 }
 
 #page2-head {
-    height: 10vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -239,9 +239,9 @@ html {
 }
 
 #page2-arrow img {
-    height: 10%;
+    height: 15%;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 11%;
 }
 
@@ -328,7 +328,7 @@ scale: 1.01;
     text-align: center;
     /* background-color: aquamarine; */
     position: absolute;
-    top: 33%;
+    top: 40%;
 }
 
 #baner1 {
