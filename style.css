@@ -10,6 +10,12 @@ html {
     width: 100%;
     background: #000;
     color: white;
+    perspective: 1000px;
+}
+
+*::selection {
+    background-color: #111111;
+    color: #D5F803;
 }
 
 #nav {
@@ -178,6 +184,11 @@ html {
     border: 1px solid #D5F803;
 }
 
+#left-part h3:hover, 
+#left-part p:hover{
+    scale: 1.1;
+}
+
 #page2 {
     height: 100vh;
     width: 100%;
@@ -228,44 +239,58 @@ html {
 }
 
 #page2-arrow img {
-    height: 15%;
+    height: 10%;
     position: absolute;
-    top: 12%;
-    left: 10%;
+    top: 10%;
+    left: 11%;
 }
 
-#cards {
-    height: 90%;
+#card-container {
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    /* padding: 1%; */
+    /* background-color: aqua; */
+
+}
+
+.cards {
+    height: 90%;
+    width: 29%;
+    padding: 1%;
+    /* background-color: #d5f803; */
 }
 
 .card {
-    height: 50%;
-    background: ghostwhite;
+    height: 80%;
     margin: 5%;
-    padding: 1%;
+    padding: 5%;
     background-color: #1B1C20;
     position: relative;
-    border-radius: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card:hover {
+scale: 1.01;
 }
 
 .card>img {
     height: 100%;
-    padding: 5%;
+    /* padding: 1%; */
     background: #7D00F2;
-    border-radius: 10px;
+    border-radius: 20px;
     object-fit: contain;
-    clip-path: polygon(50% 0, 0 0, 0 86%, 35% 86%, 35% 96%, 100% 96%, 100% 85%, 100% 13%, 65% 13%);
+    clip-path: polygon(50% 0, 0 0, 0 90%, 30% 90%, 30% 100%, 100% 100%, 100% 85%, 100% 10%, 65% 10%);
 }
 
 .card #img2 {
-background: #D5F803;
+    background: #D5F803;
 }
 
 .card #img3 {
-background: #FF5C1F;
+    background: #FF5C1F;
 }
 
 .offer {
@@ -274,8 +299,12 @@ background: #FF5C1F;
     align-items: center;
     top: 4%;
     right: 3%;
-    background-color: #333333;
+    background-color: #1B1C20;
     padding: 0 10px;
+}
+
+.offer h2 {
+    color: #939999;
 }
 
 .indiv {
@@ -284,11 +313,85 @@ background: #FF5C1F;
     font-size: 13px;
     align-items: center;
     bottom: 6%;
-    background-color: #333333;
+    background-color: #1B1C20;
     padding: 0 10px;
 }
 
 .indiv>img {
     width: 20px;
-    margin: 10px;
+    /* margin: 10px; */
+}
+
+.baner {
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 33%;
+}
+
+#baner1 {
+    border: 3px solid #7d00f2;
+    background-color: #D5F803;
+    color: #000;
+}
+
+#baner2 {
+    border: 3px solid #D5F803;
+    background-color: #FF5C1F;
+    color: #000;
+}
+
+#baner3 {
+    border: 3px solid #FF5C1F;
+    background-color: #7d00f2;
+    color: #000;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    height: 50px;
+    /* width: 120px; */
+    padding: 10px 60px;
+    border-radius: 15px;
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    font-weight: 800;
+}
+
+.btn button:hover {
+    color: black;
+    transition: 1s ease;
+}
+
+#btn1 {
+    box-shadow: 4px 4px 0 #7d00f2;
+}
+
+#btn1:hover {
+    background-color: #7d00f2;
+    box-shadow: 5px 5px 0 #D5F803;
+}
+
+#btn2 {
+    box-shadow: 4px 4px 0 #D5F803;
+}
+
+#btn2:hover {
+    background-color: #D5F803;
+    box-shadow: 5px 5px 0 #FF5C1F;
+}
+
+#btn3 {
+    box-shadow: 4px 4px 0 #FF5C1F;
+}
+
+#btn3:hover {
+    background-color: #FF5C1F;
+    box-shadow: 5px 5px 0 #7d00f2;
 }
